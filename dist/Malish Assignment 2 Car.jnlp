@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Malish Assignment 2 Car.jnlp">
+  <information>
+    <title>Malish Assignment 2 Car</title>
+    <vendor>RedPanda's LapTop</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Malish Assignment 2 Car" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="malish.assignment.pkg2.car.car"  name="Malish Assignment 2 Car" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="frameBackground" prefHeight="476.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="malish.assignment.pkg2.car.FXMLDocumentController">
+    <children>
+      <Region layoutX="6.0" layoutY="53.0" prefHeight="200.0" prefWidth="372.0" style="-fx-background-color: #b3b3b3;" />
+      <ComboBox fx:id="carMake" layoutX="13.0" layoutY="268.0" onAction="#comboChanged" prefWidth="150.0" promptText="Select A Make" />
+      <ComboBox fx:id="carModel" layoutX="192.0" layoutY="268.0" onAction="#comboChanged" prefHeight="31.0" prefWidth="160.0" promptText="Select A Model" />
+      <Button fx:id="carAccelerate" layoutX="19.0" layoutY="319.0" mnemonicParsing="false" onAction="#comboChanged" text="Accelerate" />
+      <Button fx:id="carBrake" layoutX="135.0" layoutY="319.0" mnemonicParsing="false" text="Brake" />
+      <Button fx:id="programClose" layoutX="218.0" layoutY="319.0" mnemonicParsing="false" onAction="#comboChanged" text="Close" />
+      <Label alignment="BASELINE_CENTER" layoutX="65.0" layoutY="132.0" text="Model:" />
+      <Label alignment="BASELINE_CENTER" layoutX="69.0" layoutY="78.0" text="Make:" />
+      <Label alignment="BASELINE_CENTER" layoutX="72.0" layoutY="178.0" text="Color:" />
+      <Label alignment="BASELINE_CENTER" layoutX="14.0" layoutY="211.0" text="Current Speed:" />
+      <Label fx:id="carSpeedDisplay" layoutX="143.0" layoutY="211.0" text="0" />
+      <Label fx:id="carColorDisplay" layoutX="143.0" layoutY="178.0" />
+      <Label fx:id="carModelDisplay" layoutX="143.0" layoutY="132.0" prefHeight="21.0" prefWidth="150.0" />
+      <Label fx:id="carMakeDisplay" layoutX="144.0" layoutY="78.0" prefHeight="21.0" prefWidth="160.0" />
+      <RadioButton fx:id="radioRed" layoutX="62.0" layoutY="370.0" mnemonicParsing="false" onAction="#comboChanged" text="Red">
+         <toggleGroup>
+            <ToggleGroup fx:id="colorGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioBlue" layoutX="170.0" layoutY="370.0" mnemonicParsing="false" text="Blue" toggleGroup="$colorGroup" />
+      <RadioButton fx:id="radioGreen" layoutX="62.0" layoutY="407.0" mnemonicParsing="false" text="Green" toggleGroup="$colorGroup" />
+      <RadioButton fx:id="radioSilver" layoutX="171.0" layoutY="407.0" mnemonicParsing="false" text="Silver" toggleGroup="$colorGroup" />
+      <Label layoutX="18.0" layoutY="14.0" prefHeight="21.0" prefWidth="111.0" text="Car HUD">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+
+    </children>
+</AnchorPane>
